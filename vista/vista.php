@@ -110,7 +110,7 @@
                 <button type="submit" name="accion" value="btnAgregar" class="btn btn-success">Agregar</button>
                 <!-- <button type="submit" name="accion" value="btnModificar" class="btn btn-warning">Modificar</button>
                 <button type="submit" name="accion" value="btnEliminar" class="btn btn-danger">Eliminar</button> -->
-                <button type="submit" name="accion" value="btnCancelar" class="btn btn-secondary">Cancelar</button>
+                <a href="registros.php" class="btn btn-danger" onclick="return confirm('¿Cancelas?')">Cancelar</a>
             </div>
         </form>
     </div>

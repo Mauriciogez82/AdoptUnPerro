@@ -61,7 +61,7 @@ $result = $conexion->query($sql);
 </head>
 <body>
     <h1>Registro Actualizado de Adoptantes</h1>
-    <a href="vista.php" class="btn" class="add-button">Agregar Adoptante</a>
+    <a href="vista.php" class="btn btn-success">Agregar Adoptante</a>
 
 <div class="mb-3">
     <?php if ($result && $result->num_rows > 0): ?>
@@ -88,7 +88,7 @@ $result = $conexion->query($sql);
                         <td><?= $row['EMAIL'] ?></td>
                         <td>
                             <a href="editar_dueño.php?id=<?= $row['ID_ADOPTA'] ?>" class="btn">Editar</a>
-                            <a href="eliminar_dueño.php?id=<?= $row['ID_ADOPTA'] ?>" class="btn" onclick="return confirm('¿Estás seguro de eliminar este registro?')">Eliminar</a>
+                            <a href="eliminar_dueño.php?id=<?= $row['ID_ADOPTA'] ?>" class="btn btn-danger" onclick="return confirm('¿Estás seguro de eliminar este registro?')">Eliminar</a>
                         </td>
                     </tr>
                 <?php endwhile; ?>
